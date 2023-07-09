@@ -18,7 +18,10 @@
 body {
   line-height: 1.6;
   letter-spacing: 2;
-  padding: 2rem;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  min-height:100vh;
   background-color: hsl(0, 0%, 95%);
 }
 
