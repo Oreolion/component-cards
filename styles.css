@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+body {
+  line-height: 1.6;
+  letter-spacing: 2;
+  padding: 2rem;
+  background-color: hsl(0, 0%, 95%);
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  color: var(--bright-orange);
+  padding: 0.6rem 1.7rem;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+button:hover {
+  border: #fff solid 2px;
+  background-color: var(--bright-orange);
+  color: hsl(0, 0%, 95%);
+}
+
+.column-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.columnpreview {
+  height: 28rem;
+  width: 18rem;
+  background-color: var(--bright-orange);
+  padding: 2rem 3rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.columnpreview__logo {
+  margin-bottom: 1.5rem;
+}
+
+.columnpreview__name {
+  font-family: "big shoulders display", sans-serif;
+  margin-bottom: 1.5rem;
+  font-size: 2.3rem;
+  color: hsl(0, 0%, 95%);
+}
+
+.columnpreview__text {
+  font-family: "lexend deca", sans-serif;
+  font-size: 0.85rem;
+  margin-bottom: 3rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.columnpreview--cyan {
+  height: 28rem;
+  width: 18rem;
+  padding: 2rem 3rem;
+  background-color: var(--dark-cyan);
+}
+.columnpreview--darkcyan {
+  height: 28rem;
+  width: 18rem;
+  padding: 2rem 3rem;
+  background-color: var(--very-dark-cyan);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.columnbtnprimary {
+  color: var(--dark-cyan);
+  background-color: #fff;
+}
+.columnbtnsecondary {
+  color: var(--very-dark-cyan);
+  background-color: #fff;
+}
+
+.columnbtnprimary:hover {
+  color: #fff;
+  background-color: var(--dark-cyan);
+}
+
+.columnbtnsecondary:hover {
+  background-color: var(--very-dark-cyan);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 2rem;
+  }
+
+  .column-container {
+    flex-flow: column;
+    flex: 1 1 18rem;
+    margin: 2rem;
+  }
+
+  .columnpreview {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    height: 25rem;
+  }
+
+  .columnpreview--cyan {
+    height: 25rem;
+  }
+
+  .columnpreview--darkcyan {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 0;
+    height: 25rem;
+  }
+
+  .columnpreview__logo,
+  .columnpreview__name {
+    margin-bottom: 1rem;
+  }
+
+  .columnpreview__text {
+    margin-bottom: 2rem;
+  }
+}
