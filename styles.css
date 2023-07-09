@@ -18,10 +18,10 @@
 body {
   line-height: 1.6;
   letter-spacing: 2;
-  display:flex;
+  /* display:flex;
   justify-content:center;
   align-items: center;
-  min-height:100vh;
+  min-height:100vh; */
   background-color: hsl(0, 0%, 95%);
 }
 
@@ -43,6 +43,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   margin-top: 3rem;
 }
 
